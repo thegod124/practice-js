@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>practice js</title>
+    </head>
+    <body>
+        <p>How to declare arrays?
+            <h4 id="declaration_of_arrays"></h4>
+        </p>
+        <hr>
+        <p>How to fetch the first element of arrays?
+            <h4 id="access_first_element"></h4>
+        </p>
+        <hr>
+        <p>How to fetch the second element of arrays?
+            <h4 id="access_second_element"></h4>
+        </p>
+        <hr>
+        <p>How to fetch the third element of arrays?
+            <h4 id="access_third_element"></h4>
+        </p>
+        <hr>
+        <p>How to get the length of the array?
+            <h4 id="display_length_of_array"></h4>
+        </p>
+        <hr>
+        <p>How to loop the array?
+            <h4 id="loop_the_array"></h4>
+        </p>
+        <hr>
+        <p>How to add element at the end of the array?
+            <h4 id="add_element_at_the_end_of_the_array"></h4>
+        </p>
+        <hr>
+        <p>How to add more elements at the end of the array?
+            <h4 id="add_more_elements_at_the_end_of_the_array"></h4>
+        </p>
+        <hr>
+        <p>How to declare the array with alphabets?
+            <h4 id="display_alphabets_array"></h4>
+        </p>
+        <hr>
+        <p>How to sort the array with alphabets?
+            <h4 id="display_sorted_alphabets_array"></h4>
+        </p>
+        <hr>
+        <p>How to reverse the array with aphabets?
+            <h4 id="display_reverse_array"></h4>
+        </p>
+        <hr>
+        <p>How to declare the array with numbers?
+            <h4 id="display_number_array"></h4>
+        </p>
+        <hr>
+        <p>How to find the maximum number from arrays?
+            <h4 id="display_maximum_number"></h4>
+        </p>
+        <hr>
+        <p>How to how to find the minimum numbers from arrays?
+            <h4 id="display_minimum_number"></h4>
+        </p>
+        <h3 style="background-color: red; font-size: 23px;"></h3>
+    </body>
+    <script>
+        //How to declare arrays
+        var fruits= ["apple","orange","mango"];
+        console.log(fruits);
+        document.getElementById("declaration_of_arrays").innerHTML=fruits;
+
+        //How to fetch the first element of arrays
+        var first_fruit= fruits[0];
+        console.log(first_fruit);
+        document.getElementById("access_first_element").innerHTML=first_fruit;
+
+        //How to fetch the second element of arrays
+        var second_fruit= fruits[1];
+        console.log(second_fruit);
+        document.getElementById("access_second_element").innerHTML=second_fruit;
+
+        //How to fetch the third element of arrays
+        var third_fruit= fruits[2];
+        console.log(third_fruit);
+        document.getElementById("access_third_element").innerHTML=third_fruit;
+
+        //How to get the length of the array?
+        var length_of_array= fruits.length;
+        console.log(length_of_array);
+        document.getElementById("display_length_of_array").innerHTML=length_of_array;
+        
+        //How to loop the array?
+        var array_value= "";
+        for (i = 0; i<fruits.length; i++){
+            console.log(fruits[i]);
+            array_value= array_value + fruits[i] + "<br>";
+        }
+        document.getElementById("loop_the_array").innerHTML=array_value;
+
+        //How to add element at the end of the array?
+        fruits.push("lemon");
+        console.log(fruits);
+        document.getElementById("add_element_at_the_end_of_the_array").innerHTML=fruits;
+
+        //How to add more elements at the end of the array?
+        fruits.push("cherry");
+        console.log(fruits);
+        document.getElementById("add_more_elements_at_the_end_of_the_array").innerHTML=fruits;
+
+        //How to declare the array with alphabets
+        var alphabets= ["f","r","y","u","i","a","q"];
+        console.log(alphabets);
+        document.getElementById("display_alphabets_array").innerHTML=alphabets;
+
+        //How to sort the array with alphabets?
+        alphabets.sort();
+        console.log(alphabets);
+        document.getElementById("display_sorted_alphabets_array").innerHTML=alphabets;
+
+        //How to reverse the array with aphabets?
+        alphabets.reverse();
+        console.log(alphabets);
+        document.getElementById("display_reverse_array").innerHTML=alphabets;
+
+        //How to declare the array with numbers?
+        var numbers= ["5","765","98"];
+        console.log(numbers);
+        document.getElementById("display_number_array").innerHTML=numbers;
+
+        //How to find the maximum number from arrays?
+        var maximum_number= Math.max.apply(Math,numbers);
+        console.log(maximum_number);
+        document.getElementById("display_maximum_number").innerHTML=maximum_number;
+
+        //How to find the minimum number from arrays?
+        var minimum_number= Math.min.apply(Math,numbers);
+        console.log(minimum_number);
+        document.getElementById("display_minimum_number").innerHTML=minimum_number;
+
+    </script>
+</html>
